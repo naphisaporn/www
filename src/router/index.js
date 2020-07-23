@@ -1,20 +1,18 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
-import Home2 from "../views/Home2.vue";
-import Event from "../views/EventMethod.vue";
-import Data from "../views/Data.vue";
-import Compute from "../views/Compute.vue";
-import Blinding from "../views/Blinding.vue";
-import Form from "../views/Form.vue";
-import Slot from "../views/Slot.vue";
-import Condition from "../views/Condition.vue";
-import Loop from "../views/Loop.vue";
-import Lifecycle from "../views/LifeCycle.vue";
-import Variable from "../views/Variable and State.vue";
-import Ref from "../views/Ref.vue";
-import Filters from "../views/Filters.vue";
 import Product from "../views/Product.vue";
+import Blog from "../views/Blog.vue";
+import About from "../views/About.vue";
+import Contact from "../views/Contact.vue";
+import B50 from "../views/Products/B-50.vue";
+import Iron from "../views/Products/Iron.vue";
+import Calcium from "../views/Products/Calcium.vue";
+import Customer from "../views/Products/Customer.vue";
+import Product2 from "../views/Product2.vue";
+import ProductCategory from "../views/Product_Category.vue";
+import Blog_detail from "../views/Blog_detail.vue";
+
 import Vuetify from "vuetify";
 
 Vue.use(VueRouter);
@@ -28,83 +26,72 @@ const routes = [
     component: Home
   },
   {
+    path: "/Blog_detail",
+    name: "Blog_detail",
+    component: Blog_detail
+
+  },
+  {
+    path: "/ProductCategory",
+    name: "ProductCategory",
+    component: ProductCategory
+  },
+  {
     path: "/about",
     name: "About",
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue")
+    component: About
+    // component: () =>
+    //   import(/* webpackChunkName: "about" */ "../views/About.vue")
   },
-  {
-    path: "/Home2",
-    name: "Home2",
-    component: Home2
-  },
-  {
-    path: "/Event",
-    name: "Event",
-    component: Event
-  },
-  {
-    path: "/Data",
-    name: "Data",
-    component: Data
-  },
-  {
-    path: "/Compute",
-    name: "Compute",
-    component: Compute
-  },
-  {
-    path: "/Blinding",
-    name: "Blinding",
-    component: Blinding
-  },
-  {
-    path: "/Form",
-    name: "Form",
-    component: Form
-  },
-  {
-    path: "/Slot",
-    name: "Slot",
-    component: Slot
-  },
-  {
-    path: "/Condition",
-    name: "Condition",
-    component: Condition
-  },
-  {
-    path: "/Loop",
-    name: "Loop",
-    component: Loop
-  },
-  {
-    path: "/Lifecycle",
-    name: "Lifecycle",
-    component: Lifecycle
-  },
-  {
-    path: "/Variable",
-    name: "Variable",
-    component: Variable
-  },
-  {
-    path: "/Ref",
-    name: "Ref",
-    component: Ref
-  },
-  {
-    path: "/Filters",
-    name: "Filters",
-    component: Filters
-  },
+  
+ 
   {
     path: "/Product",
     name: "Product",
     component: Product
+  },
+  {
+    path: "/Blog",
+    name: "Blog",
+    component: Blog
+  },
+  {
+    path: "/About",
+    name: "About",
+    component: About
+  },
+  {
+    path: "/Contact",
+    name: "Contact",
+    component: Contact
+  },
+  {
+    path: "/B50",
+    name: "B50",
+    component: B50
+  },
+  {
+    path: "/Iron",
+    name: "Iron",
+    component: Iron
+  },
+  {
+    path: "/Calcium",
+    name: "Calcium",
+    component: Calcium
+  },
+  {
+    path: "/Customer",
+    name: "Customer",
+    component: Customer
+  },
+  {
+    path: "/Product2",
+    name: "Product2",
+    component: Product2
   }
 ];
 

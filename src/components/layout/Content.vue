@@ -22,7 +22,7 @@ export default {
 </style>
 <style>
 #content {
-    background-color: #f6f4e8;
+    background-color: white;
     background-size: contain;
     /* class="content-wrapper */
 }
